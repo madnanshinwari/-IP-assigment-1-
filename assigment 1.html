@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Your Professional Single Page Website</title>
+    <style>
+      /* Add your custom styles here */
+      body {
+        padding-top: 56px;
+      }
+
+      /* Adjust for fixed navbar */
+      @media (min-width: 768px) {
+        body {
+          padding-top: 80px;
+        }
+      }
+
+      /* Additional styling for the hero section */
+      header {
+        background-image: url("./assigments/images/background.webp"); /* Add your hero image URL here */
+        background-size: cover;
+        background-position: center;
+        padding: 100px;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      /* Styling for the navigation bar */
+      .navbar {
+        background-color: #343a40; /* Set the background color to your desired color */
+      }
+
+      .navbar-brand {
+        color: white; /* Set the color of the brand text */
+      }
+
+      .navbar-toggler-icon {
+        background-color: white; /* Set the color of the toggle icon */
+      }
+
+      /* Styling for the features section */
+      #features {
+        background-color: #f8f9fa;
+        padding: 80px 0;
+      }
+
+      /* Styling for the contact section */
+      #contact {
+        background-color: #343a40;
+        color: white;
+        padding: 80px 20px; /* Add margin to the right and center content */
+      }
+
+      /* Medium size for the Suzuki paragraph */
+      #features p {
+        font-size: 1.5rem;
+        font-weight: normal;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Suzuki</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="jumbotron jumbotron-fluid text-center text-white" id="home">
+      <div class="container">
+        <h1 class="display-4">Welcome to Suzuki</h1>
+      </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="container" id="features">
+      <div class="row">
+        <div class="col-lg-4">
+          <img
+            src="./assigments/images/car 2.jpg"
+            alt="Feature 1 Image"
+            class="img-fluid mb-4"
+          />
+        </div>
+        <div class="col-lg-4">
+          <img
+            src="./assigments/images/car1.jpg"
+            alt="Feature 2 Image"
+            class="img-fluid mb-4"
+          />
+        </div>
+        <div class="col-lg-4">
+          <img
+            src="./assigments/images/car 4.jpg"
+            alt="Feature 3 Image"
+            class="img-fluid mb-4"
+          />
+        </div>
+      </div>
+      <p>
+        <strong>Suzuki Motor Corporation</strong> was first established as
+        Suzuki Loom Manufacturing Co. in March 1920. Suzuki then entered the
+        motorcycle business with the introduction of “Power Free” motorized
+        bicycle in 1952, and entered the automobile business in 1955 with the
+        introduction of “Suzulight” mini car.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container" id="contact">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row">
+        <div class="col-lg-6"></div>
+        <div class="col-lg-6">
+          <form>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="4"
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JavaScript and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
